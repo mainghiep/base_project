@@ -76,22 +76,17 @@ export default function Add() {
         <div className='container'>
 
             {isSuccess &&
-                isSuccess &&
-
-                <div className="toast align-items-center text-white bg-primary border-0" role="alert" aria-live="assertive" aria-atomic="true" style={{position: 'fixed',
-                    top: 20, left:30}}>
-                    
-                    
-                    <div className="d-flex">
-                        <div class="toast-body">
-                            Thêm thành công!
-                        </div>
-                        <button type="button" classNames="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close" onClick={() => setIsSuccess(false)}></button>
-                    </div>
+                <div className="alert alert-success alert-dismissible fade show" role="alert" style={{
+                    position: 'fixed',
+                    top: 20, left: 30
+                }}>
+                    Thêm thành công!
+                    <button type="button" className="btn-close" onClick={() => setIsSuccess(false)}></button>
                 </div>
+
             }
-        
-            
+
+
             <div className='d-flex justify-content-center'>
                 <h1>Trang Thêm Mới</h1>
             </div>
